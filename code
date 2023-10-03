@@ -1,0 +1,18 @@
+#include <stdio.h>
+
+int main()
+{
+   printf("%-10s %-15s %-20s\n", "ID", "Name", "City");
+    printf("=============================================\n");
+
+    // Sample data for the table
+    int ids[] = {1, 2, 3};
+    char names[][15] = {"Alice", "Bob", "Charlie"};
+    char cities[][20] = {"New York", "Los Angeles", "Chicago"};
+
+    // Print the table contents
+    for (int i = 0; i < 3; i++) {
+        printf("%-10d %-15s %-20s\n", ids[i], names[i], cities[i]);
+    }
+
+}
